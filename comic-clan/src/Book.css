@@ -1,0 +1,45 @@
+.row__book {
+  max-width: 200px;
+
+  margin: 24px;
+}
+
+.row__book__name:link {
+  text-decoration: "none";
+}
+
+.row__book__image {
+  background: linear-gradient(
+    180deg,
+    #dcec73 0%,
+    rgba(195, 115, 115, 0.48137) 100%
+  );
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(34, 34, 34, 0.7);
+}
+
+.row__book__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #cccccc;
+}
+
+.row__book__owner {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.row__book__owner__name {
+  font-weight: bold;
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.row__book__owner__name:hover {
+  color: #000;
+}

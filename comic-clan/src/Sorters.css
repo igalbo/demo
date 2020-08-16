@@ -1,0 +1,31 @@
+.sorters {
+  padding-left: 28px;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 19px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #777777;
+  height: 38px;
+  border: transparent;
+  outline: none;
+  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.4s;
+}
+
+button:focus {
+  background: #f15454;
+  box-shadow: 0px 2px 3px rgba(34, 34, 34, 0.6);
+  color: white;
+}

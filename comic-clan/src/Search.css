@@ -1,0 +1,22 @@
+.search {
+  padding: 28px;
+}
+
+.search__bar {
+  width: 100%;
+  padding-left: 60px;
+  height: 60px;
+  border: 3px solid #777777;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: transparent;
+  background-image: url("https://i.imgur.com/mTmJQ9z.png");
+  background-position: 18px 16px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #cccccc;
+}
