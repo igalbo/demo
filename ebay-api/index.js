@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3010;
+const testReq = require("./request.js");
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -12,7 +13,19 @@ app.use(function (req, res, next) {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  async function fetchData() {
+    const response = await testReq.get("https://api.ebay.com/ws/api.dll");
+    return response.data;
+  }
+
+  const result = fetchData()
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => console.log(err));
+  console.log(result);
+
+  // res.send(result);
 });
 
 app.listen(port, () => {
